@@ -1,4 +1,4 @@
-![TechBash 2018 Logo](https://github.com/TechBash/Marketing/2018/Logos/techbash2018 with Developer Conference - hires.jpg )
+![TechBash 2018 Logo](https://raw.githubusercontent.com/TechBash/Marketing/master/2018/Logos/techbash2018.png)
 ============
 
 TechBash 2018 session decks, sample code, links and other stuff. Be sure to use #TechBash2017 when posting in social media.
