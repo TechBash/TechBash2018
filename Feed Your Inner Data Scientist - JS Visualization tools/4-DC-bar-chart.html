@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body {
+        margin: 25px;
+        color: black;
+    }
+
+    text {
+        color: black important !;
+        font-size: 15px;
+    }
+</style>
+<body>
+
+    <h1> Bar Chart - http://bost.ocks.org/mike/bar/3/</h1> <div id="test"> </div>
+    <link rel="stylesheet" type="text/css" href="include/dc.css" />
+
+    <script src="include/crossfilter.js"></script>
+    <script src="include/d3.js"></script>
+    <script src="include/dc.js"></script>
+    <script src="include/moment.min.js"></script>
+
+    <script>
+        var chart = dc.barChart("#test");
+        var parseDate = d3.time.format("%Y-%m").parse;
+
+        d3.csv("data/bar-data.csv", function (error, data) {
+            data.forEach(function (d) {
+                d.date = moment(parseDate(d.date)).format('YYYY-MM');
+                d.close = +d.close;
+            });
+
+            var ndx = crossfilter(data),
+                  dateDim = ndx.dimension(function (d) { return d.date; }),
+                  closeGroup = dateDim.group().reduceSum(function (d) { return d.close; });
+            console.log('time: ' + new Date().getTime());
+            chart
+                .width(768)
+                .height(480)
+                .elasticY(true)
+                .elasticX(false)
+                .dimension(dateDim)
+                .group(closeGroup)
+                .x(d3.scale.ordinal())
+                .xUnits(dc.units.ordinal)
+                .brushOn(false)
+                .gap(10)
+                .centerBar(true)
+                .renderLabel(true)
+                .yAxisLabel("Y Axis")
+                .renderTitle(true).title(function (d) {
+                    return 'test: ' + d.value;
+                })
+                .renderHorizontalGridLines(true)
+                .label(function (d) { return 'test'; })
+                .xUnits(dc.units.ordinal)
+            ;
+
+            chart.render();
+
+            labels = chart.g().selectAll("rect.bar text");
+        })
+    </script>
+</body>
