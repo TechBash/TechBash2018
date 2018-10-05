@@ -1,0 +1,94 @@
+body {
+    background-color: #F9F9F9;
+    font: 14px 'Source Sans Pro', sans-serif;
+}
+
+input[type=text] {
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 10px 16px;
+}
+
+input[type=submit] {
+    border: 2px solid #2269EA;
+    border-radius: 4px;
+    background-color: #2269EA;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 20px;
+    height: 38px;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    border-color: #1354B6;
+    background-color: #1354B6;
+    transition: 0.3s;
+}
+
+input[type=text] + input[type=submit] {
+    margin-left: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.creator {
+    display: flex;
+    margin: auto;
+}
+
+.creator-description {
+    flex: 1 0 auto;
+}
+
+.creator-add {
+    flex: 0 0 auto;
+}
+
+.loadcreator {
+    display: flex;
+    margin: 0 auto 16px auto;
+}
+
+.tasklist {
+    list-style: none;
+    padding: 0;
+    border: 2px solid #CCCCCC;
+}
+
+.tasklist-empty {
+    margin-top: 16px;
+    padding: 10px 16px;
+}
+
+.task {
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+    padding: 10px 16px;
+    background-color: #FFF;
+}
+
+.task:hover {
+    background-color: #FBFBFB;
+}
+
+.task:active {
+    background-color: #E3E3E3;
+}
+
+.task + .task {
+    border-top: 1px solid #CCCCCC;
+}
+
+.task-remove {
+    float: right;
+    color: #A6A6A6;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}

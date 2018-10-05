@@ -1,0 +1,53 @@
+body {
+    background-color: #F9F9F9;
+    font: 14px 'Source Sans Pro', sans-serif;
+}
+
+input[type=text] {
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 10px 16px;
+}
+
+input[type=submit] {
+    border: 2px solid #2269EA;
+    border-radius: 4px;
+    background-color: #2269EA;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 20px;
+    height: 38px;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    border-color: #1354B6;
+    background-color: #1354B6;
+    transition: 0.3s;
+}
+
+input[type=text] + input[type=submit] {
+    margin-left: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input + button {
+    margin-left: 8px;
+}
+
+.controller {
+    display: flex;
+    margin: auto;
+}
+
+.controller-value {
+    flex: 1 0 auto;
+}
+
+.controller-update {
+    flex: 0 0 auto;
+}
