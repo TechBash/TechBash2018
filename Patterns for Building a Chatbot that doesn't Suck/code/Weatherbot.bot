@@ -1,0 +1,24 @@
+{
+    "name": "Weatherbot",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "35"
+        },
+        {
+            "type": "luis",
+            "name": "WeatherBot",
+            "id": "",
+            "appId": "YOUR APP ID HERE", 
+            "subscriptionKey": "YOUR SUBSCRIPTION KEY HERE",
+            "version": "2.0",
+            "region": "YOUR REGION HERE"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}

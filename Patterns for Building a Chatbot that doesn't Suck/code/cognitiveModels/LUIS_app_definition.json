@@ -1,0 +1,134 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "WeatherBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "getForecast"
+    },
+    {
+      "name": "help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "geography",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "give me the forecast for monday in chicago",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "give me the weather for tuesday",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "help me use this bot",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "how can i use this bot?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "how can i use this?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "how do i use this bot?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "how does this work?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "how hot is it in new york",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "is it raining in new york",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what about new york",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what about thursday",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what can i say?",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "what is the forecast for monday?",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what is the forecast for new york",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what is the forecast for new york next tuesday",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what is the weather in new york next tuesday",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what is the weather tuesday in new york?",
+      "intent": "getForecast",
+      "entities": []
+    },
+    {
+      "text": "what's the weather in new york",
+      "intent": "getForecast",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
