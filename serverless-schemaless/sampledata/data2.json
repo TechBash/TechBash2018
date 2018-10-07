@@ -1,0 +1,12 @@
+  {
+    "albumid": 164,
+    "name": "Nevermind",
+    "vendor_id": 110,
+	"vendor_name":"Acme Inc",
+    "requires_shipping": false,
+    "sku": "ALBUM-164",
+    "taxable": true,
+    "status": "available",
+    "price": 12.48,
+	"tracks": 10
+  }
