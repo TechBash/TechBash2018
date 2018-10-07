@@ -1,0 +1,12 @@
+power bi desktop, service and app
+consists of:
+visualization: visual representation of data
+datasets: collection of data used for visualization. could be different sources - azure sql, excel, or services like FB, SalesForce, MailChimp. Connectors also allow filtering
+report: collection of visualizations - one or more pages
+dashboards: collection of visualizations - single page called canvas.
+Tiles: 
+
+
+Santosh is an Azure Consultant with 20 years of experience in the software industry. Before Nebbia, he was involved with tech startups, where he architected greenfield applications providing services in nearly a dozen countries by leveraging the cloud. He has also worked with a wide range of clients in the public and private sector including numerous Fortune 500 clients and government agencies. He is a public speaker and has delivered talks at various tech conferences and user groups. He is a recepient of the Microsoft MVP award for Azure since 2016 and has multiple approved software patents. Santosh is deeply involved with the local community as leader of the Orlando .NET User Group [http://onetug.org] and co-organizer of the Orlando Codecamp [http://orlandocodecamp.com]. You can find him on LinkedIn [https://linkedin.com/in/santoshhari], Twitter [@_s_hari] - where he tweets about all things tech and non-tech, and his blog [https://santoshhari.wordpress.com] - where he blogs about mostly technical topics.
+
+docker run --rm -v c:/Users:/data alpine ls /data/DockerUsers/projects
