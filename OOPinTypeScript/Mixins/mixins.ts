@@ -30,7 +30,7 @@ class Decathlete implements runsFast, jumpsHigh, throwsFar {
   throwsFar!: () => void;
 }
 
-applyMixins(Decathlete, [RunsFast, JumpsHigh, ThrowsFar]);
+applyMixins(Decathlete, [runsFast, jumpsHigh, throwsFar]);
 
 const aDecathlete = new Decathlete();
 console.log('Decathlete:');
